@@ -18,6 +18,10 @@ contract NarwhalswapFactory is INarwhalswapFactory {
         feeToSetter = _feeToSetter;
     }
 
+    function pairCodeHash() external pure returns (bytes32) {
+        return keccak256(type(NarwhalswapPair).creationCode);
+    }
+
     function allPairsLength() external override view returns (uint) {
         return allPairs.length;
     }
