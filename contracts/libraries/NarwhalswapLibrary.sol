@@ -23,7 +23,7 @@ library NarwhalswapLibrary {
                 hex'ff',
                 factory,
                 keccak256(abi.encodePacked(token0, token1)),
-                hex'acc1c81cc3e9fb496da555f6bd67c3a095e579b26c1b580070cc6afa8f0a94fa' // init code hash
+                hex'8a30072f74333632d4cca8ddbfc623703398716ee4a6a93f48d4fc610b5b4cf4' // init code hash
             ))));
     }
 
